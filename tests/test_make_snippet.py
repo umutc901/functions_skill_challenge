@@ -14,3 +14,14 @@ def test_six_word_string():
 def test_count_words():
     result = count_words("one two three four five six seven")
     assert result == 7
+    
+def test_estimated_reading_time():
+    result = reading_time_estimate(500)
+    assert result == 2.5
+def test_reading_time_2():    
+    result = reading_time_estimate(700)
+    assert result == 3.5
+
+def test_if_begin_with_capital():
+    result = grammar_check("This sentence begins with a capital and ends with proper punctuation.")
+    assert result == True
