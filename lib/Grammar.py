@@ -16,9 +16,7 @@ class GrammarStats:
         else:
             self.total_checks +=1
             return False
-          
-       
-
+        
     def percentage_good(self):
         # Returns:
         #   int: the perpytesentage of texts checked so far that passed the check
@@ -28,3 +26,4 @@ class GrammarStats:
         else:
             percentage = int((self.passed_checks / self.total_checks) * 100)
             return percentage
+        
